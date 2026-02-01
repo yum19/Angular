@@ -1,0 +1,141 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #4CAF50;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.suggestion-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.acceptee {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status-badge.refusee {
+  background-color: #f44336;
+  color: white;
+}
+
+.status-badge.en_attente {
+  background-color: #ff9800;
+  color: white;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.category {
+  color: #3498db;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.date {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.likes {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-like, .btn-favorite {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-like {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-like:hover {
+  background-color: #0b7dda;
+}
+
+.btn-favorite {
+  background-color: #FFD700;
+  color: #333;
+}
+
+.btn-favorite:hover {
+  background-color: #FFC700;
+}
