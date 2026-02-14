@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';  // Add this
 import { Suggestion } from '../../models/suggestion';
 
 @Component({
   selector: 'app-list-suggestion',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],  // Add RouterLink here
   templateUrl: './list-suggestion.component.html',
   styleUrl: './list-suggestion.component.css'
 })
