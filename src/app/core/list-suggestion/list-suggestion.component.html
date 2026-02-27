@@ -30,13 +30,19 @@
       
       <!-- Buttons (hidden if status is 'refusee') -->
       <div class="actions" *ngIf="suggestion.status !== 'refusee'">
-        <button (click)="likeSuggestion(suggestion)" class="btn-like">
-          👍 Like
-        </button>
-        <button (click)="addToFavorites(suggestion)" class="btn-favorite">
-          ⭐ Ajouter aux favoris
-        </button>
-      </div>
+  <button (click)="likeSuggestion(suggestion)" class="btn-like">
+    👍 Like
+  </button>
+  <button (click)="addToFavorites(suggestion)" class="btn-favorite">
+    ⭐ Favoris
+  </button>
+  <a [routerLink]="['/suggestions', suggestion.id]" class="btn-details">
+    📄 Détails
+  </a>
+  <button (click)="deleteSuggestion(suggestion.id)" class="btn-delete">
+    🗑️ Supprimer
+  </button>
+</div>
     </div>
   </div>
 </div>

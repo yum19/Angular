@@ -1,0 +1,99 @@
+.details-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.details-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.status-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.acceptee {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status-badge.refusee {
+  background-color: #f44336;
+  color: white;
+}
+
+.status-badge.en_attente {
+  background-color: #ff9800;
+  color: white;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  padding-right: 150px;
+}
+
+.detail-row {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.detail-row strong {
+  color: #34495e;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.detail-row p {
+  margin: 0;
+  line-height: 1.6;
+  color: #666;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-back {
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #2980b9;
+}
+
+.btn-update {
+  padding: 12px 24px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-update:hover {
+  background-color: #e67e22;
+}

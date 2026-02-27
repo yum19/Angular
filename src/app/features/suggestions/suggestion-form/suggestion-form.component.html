@@ -1,6 +1,5 @@
 <div class="form-container">
-  <h2>📝 Ajouter une Nouvelle Suggestion</h2>
-  
+<h2>{{ isEditMode ? '✏️ Modifier la Suggestion' : '📝 Ajouter une Nouvelle Suggestion' }}</h2>  
   <form [formGroup]="suggestionForm" (ngSubmit)="onSubmit()">
     
     <!-- Titre -->
@@ -88,11 +87,11 @@
     <!-- Buttons -->
     <div class="form-actions">
       <button 
-        type="submit" 
-        class="btn-submit" 
-        [disabled]="suggestionForm.invalid">
-        ✅ Soumettre
-      </button>
+  type="submit" 
+  class="btn-submit" 
+  [disabled]="suggestionForm.invalid">
+  {{ isEditMode ? '💾 Mettre à jour' : '✅ Soumettre' }}
+</button>
       <a routerLink="/suggestions" class="btn-cancel">
         ❌ Annuler
       </a>

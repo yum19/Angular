@@ -160,3 +160,39 @@ h3 {
 .btn-add:hover {
   background-color: #229954;
 }
+
+.btn-details {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s;
+  background-color: #9b59b6;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-details:hover {
+  background-color: #8e44ad;
+}
+
+.btn-delete {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s;
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
